@@ -26,15 +26,6 @@ namespace Projeto_Banco
             get { return _nome; }
             set { _nome = value; }
         }
-        public bool escolha(string menuEscolha) 
-        {
-            if (menuEscolha == "s")
-            {
-                return true;
-            }
-            return false;
-        }
-
         public void Deposito(double deposito) 
         {
             Saldo += deposito;
