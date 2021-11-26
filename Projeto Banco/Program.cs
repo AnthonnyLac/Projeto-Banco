@@ -11,7 +11,7 @@ namespace Projeto_Banco
             int numeroConta = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Digite o nome do Titular da Conta:");
             string nome = Console.ReadLine();
-            Console.WriteLine("Haverá deposito inicial (s/n)?");
+            Console.WriteLine("Haverá deposito inicial?\n[s] Sim\n[*] Qualquer tecla para Não");
             string escolha = Console.ReadLine();
             
             if (escolha == "s")
