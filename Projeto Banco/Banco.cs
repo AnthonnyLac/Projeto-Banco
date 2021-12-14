@@ -36,6 +36,16 @@ namespace Projeto_Banco
             Saldo -= Taxa;
         }
 
+        public static double Escolha(string escolha) 
+        {
+            if (escolha == "s") 
+            {
+                Console.WriteLine("Entre valor para saldo inicial:");
+                return Convert.ToDouble(Console.ReadLine());
+            }
+            return 0;
+        }
+
         public override string ToString()
         {
             return $"Dados Atualizados!\nConta {NumeroConta}, Titular: {_nome}, Saldo: R${Saldo.ToString("F2")}";
